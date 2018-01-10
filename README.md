@@ -2,6 +2,8 @@
 
 [![TravisCI](https://travis-ci.org/MarcinKonowalczyk/mazes-for-programmers-python-src.svg?branch=master)](https://travis-ci.org/MarcinKonowalczyk/mazes-for-programmers-python-src.svg?branch=master)
 
+[![Coverage Status](https://coveralls.io/repos/github/MarcinKonowalczyk/mazes-for-programmers-python-src/badge.svg?branch=master)](https://coveralls.io/github/MarcinKonowalczyk/mazes-for-programmers-python-src?branch=master)
+
 ## Introduction
 
 I'm reading the [Mazes for Programmers](http://www.mazesforprogrammers.com) book, but source code comes in Ruby and I like Python, so I decided to rewrite them as I read. And along the way add tests, both to make sure the conversion is ok and to see a more continuous way than having to write all basic stuff and an "ASCII renderer" before being able to see anything.

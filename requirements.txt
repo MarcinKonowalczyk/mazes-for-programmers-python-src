@@ -7,3 +7,5 @@ Pillow==4.2.1
 # test only
 pytest>=3.2
 flake8>=3.5
+coveralls
+pytest-cov

@@ -1,4 +1,6 @@
 Pillow==4.2.1
+numpy
+matplotlib
 
 # test only
 mypy

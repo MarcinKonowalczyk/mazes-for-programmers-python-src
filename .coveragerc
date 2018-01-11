@@ -1,0 +1,6 @@
+[report]
+
+# Do not test the test or the demos
+omit = 
+    demos/*
+    test/*

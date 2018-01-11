@@ -52,7 +52,7 @@ class Wolf3DExporter(Exporter):
         return self._enemies_count
 
     def __init__(self) -> None:
-        self._enemies_count = 0
+        self._enemies_count = 0  # type: int
 
     def render(self, grid: Union[Grid, ColoredGrid], **kwargs: Any) -> None:
         assert isinstance(grid, ColoredGrid)

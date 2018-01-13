@@ -8,9 +8,9 @@ if module_path not in sys.path:
 import argparse
 from typing import Union, cast  # noqa: F401
 
-from base.distance_grid import DistanceGrid
+from base import DistanceGrid
 # from base.grid import Grid
-from base.rotator import Rotator
+from base import Rotator
 
 import pathfinders.dijkstra as Dijkstra
 import pathfinders.longest_path as LongestPath

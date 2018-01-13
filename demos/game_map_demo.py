@@ -13,12 +13,12 @@ from typing import cast, List, TYPE_CHECKING  # noqa: F401
 
 import pathfinders.dijkstra as Dijkstra
 import pathfinders.longest_path as LongestPath
-from base.colored_grid import ColoredGrid
+from base import ColoredGrid
 from demos.demo_utils import ALGORITHM_NAMES, avalible_algorithm, avalible_exporter
-from exporters.png_exporter import PNGExporter
+from exporters import PNGExporter
 
 if TYPE_CHECKING:
-    from exporters.wolf3d_exporter import Wolf3DExporter
+    from exporters import Wolf3DExporter
 else:
     Wolf3DExporter = 'Wolf3DExporter'
 

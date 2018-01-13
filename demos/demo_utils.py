@@ -6,30 +6,17 @@ if module_path not in sys.path:
     sys.path.append(module_path)
 
 from argparse import ArgumentTypeError
-from typing import List, Type, cast  # noqa: F401
+from typing import TYPE_CHECKING, List, Type, cast  # noqa: F401
 
-from algorithms.algorithm import Algorithm  # noqa: F401
-from algorithms.aldous_broder import AldousBroder
-from algorithms.binary_tree import BinaryTree
-from algorithms.hunt_and_kill import HuntAndKill
-from algorithms.recursive_backtracker import RecursiveBacktracker
-from algorithms.sidewinder import Sidewinder
-from algorithms.wilson import Wilson
+if TYPE_CHECKING:
+    from algorithms import Algorithm
+    from exporters import Exporter
+else:
+    Algorithm = 'Algorithm'
+    Exporter = 'Exporter'
 
-ALGORITHMS = [AldousBroder, BinaryTree, HuntAndKill,
-              RecursiveBacktracker, Sidewinder, Wilson]  # type: List[Type[Algorithm]]
-ALGORITHM_NAMES = [x.__name__ for x in ALGORITHMS]  # type: List[str]
-
-from exporters.exporter import Exporter
-from exporters.ascii_exporter import ASCIIExporter
-from exporters.pixel_exporter import PixelExporter
-from exporters.png_exporter import PNGExporter
-from exporters.unicode_exporter import UnicodeExporter
-from exporters.wolf3d_exporter import Wolf3DExporter
-
-EXPORTERS = [Wolf3DExporter, PNGExporter, PixelExporter,
-             UnicodeExporter, ASCIIExporter]  # type: List[Type[Exporter]]
-EXPORTER_NAMES = [x.__name__ for x in EXPORTERS]  # type: List[str]
+from algorithms import ALGORITHMS, ALGORITHM_NAMES  # noqa: F401
+from exporters import EXPORTERS, EXPORTER_NAMES  # noqa: F401
 
 def validate_algorithm(desired_algorithm: str) -> Algorithm:
     ''' Check whether the algorithm name is valid and return an instance of it '''

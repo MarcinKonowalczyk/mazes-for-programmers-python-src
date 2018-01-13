@@ -12,8 +12,8 @@ from time import gmtime, strftime
 import argparse
 # from typing import cast
 
-from base.colored_grid import ColoredGrid
-from base.rotator import Rotator
+from base import ColoredGrid
+from base import Rotator
 
 from pathfinders import dijkstra as Dijkstra
 from pathfinders import longest_path as LongestPath

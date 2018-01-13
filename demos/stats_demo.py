@@ -11,8 +11,8 @@ from typing import Union, cast  # noqa: F401
 
 import pathfinders.dijkstra as Dijkstra
 import pathfinders.longest_path as LongestPath
-from base.distance_grid import DistanceGrid
-from base.grid import Grid
+from base import DistanceGrid
+from base import Grid
 from demos.demo_utils import ALGORITHMS, str2bool
 
 if __name__ == '__main__':

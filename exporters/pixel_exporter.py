@@ -21,7 +21,7 @@ class PixelExporter(Exporter):
         filename, cell_size, coloring = self._processKwargs(**kwargs)
 
         if not isColoredGrid(grid) and coloring: coloring = False
-        grid = cast(ColoredGrid, Grid)
+        grid = cast(ColoredGrid, grid)
 
         image = self._render(grid, cell_size, coloring)
         image.save('{}.png'.format(filename), 'PNG', optimize=True)
@@ -41,7 +41,7 @@ class PixelExporter(Exporter):
             for ci, cell in enumerate(row):
                 # Figure out the color
                 if len(cell.links) > 0:
-                    color = grid.color(cell) if coloring else (0, 0, 0)
+                    color = grid.color(cell) if coloring else (255, 255, 255)
                     if color is None: color = (0, 0, 0)
                 else:
                     color = (0, 0, 0)  # no links therefore color cell

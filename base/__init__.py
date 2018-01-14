@@ -1,3 +1,4 @@
+# TODO: Unify Grid and DistanceGrid...?
 from typing import List, Type  # noqa: F401
 
 # Shortcuts for the import of the base classes

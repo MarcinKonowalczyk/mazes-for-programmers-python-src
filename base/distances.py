@@ -2,7 +2,7 @@ from typing import Dict, List, Optional, Tuple, TYPE_CHECKING
 
 # Avoid cyclic import, as Cell uses Distances
 if TYPE_CHECKING:
-    from base.cell import Cell  # noqa: F401  # Ignore the fact that Cell is not actually used
+    from base.cell import Cell  # noqa: F401
 else:
     Cell = 'Cell'
 
@@ -68,4 +68,4 @@ class Distances:
 
 def isCell(cell: Cell) -> bool:
     ''' Runtime typecheck '''
-    return type(cell).__name__ == Cell
+    return type(cell).__name__ == 'Cell'

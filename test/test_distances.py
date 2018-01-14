@@ -1,5 +1,5 @@
-from base.distances import Distances
-from base.cell import Cell
+from base import Distances
+from base import Cell
 
 
 def test_index_access() -> None:

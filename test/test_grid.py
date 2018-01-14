@@ -1,6 +1,5 @@
-
-from base.grid import Grid
-from base.cell import Cell
+from base import Grid
+from base import Cell
 
 
 def test_constructor() -> None:

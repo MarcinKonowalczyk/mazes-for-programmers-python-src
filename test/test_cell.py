@@ -1,5 +1,4 @@
-
-from base.cell import Cell
+from base import Cell
 
 
 def test_equality() -> None:

@@ -1,6 +1,6 @@
 # Mazes For Programmers Python Sources
 
-[![TravisCI](https://travis-ci.org/MarcinKonowalczyk/mazes-for-programmers-python-src.svg?branch=master)](https://travis-ci.org/MarcinKonowalczyk/mazes-for-programmers-python-src?branch=master) [![Coverage Status](https://coveralls.io/repos/github/MarcinKonowalczyk/mazes-for-programmers-python-src/badge.svg?branch=master)](https://coveralls.io/github/MarcinKonowalczyk/mazes-for-programmers-python-src?branch=master)
+[![TravisCI](https://travis-ci.org/MarcinKonowalczyk/mazes-for-programmers-python-src.svg?branch=master&service=github)](https://travis-ci.org/MarcinKonowalczyk/mazes-for-programmers-python-src?branch=master) [![Coverage Status](https://coveralls.io/repos/github/MarcinKonowalczyk/mazes-for-programmers-python-src/badge.svg?branch=master&service=github)](https://coveralls.io/github/MarcinKonowalczyk/mazes-for-programmers-python-src?branch=master)
 
 ## Introduction
 
